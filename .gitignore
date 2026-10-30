@@ -1,0 +1,14 @@
+cat << 'EOF' > .gitignore
+# Dataset pesado y datos crudos
+*.csv
+*.zip
+
+# Archivos temporales de Python y entornos
+__pycache__/
+*.pyc
+
+# Logs y sockets de Kafka / Spark
+metastore_db/
+derby.log
+checkpoint/
+EOF
